@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(90deg,red,blue,red);
+    font-family: sans-serif;
+}
+
+button {
+    cursor: pointer;
+    transition: .4s;
+    border: none;
+    outline: none;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 60px 0;
+}
+
+.group label {
+    color: black;
+    background: aqua;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 15px 35px;
+    margin: 0 25px;
+    border-radius: 30px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs img {
+    width: 220px;
+    height: 220px;
+    padding: 0 20px;
+}
+
+.tabs input {
+    display: none;
+}
+
+#instagram:checked ~ .facebook,
+#instagram:checked ~ .twitter,
+#instagram:checked ~ .whatsapp {
+    display: none;
+    /*opacity: 0.4;*/
+    transform: scale(1.1);
+}
+
+#facebook:checked ~ .instagram,
+#facebook:checked ~ .twitter,
+#facebook:checked ~ .whatsapp {
+    display: none;
+    /*opacity: 0.4;*/
+    transform: scale(1.1);
+}
+
+#twitter:checked ~ .instagram,
+#twitter:checked ~ .facebook,
+#twitter:checked ~ .whatsapp {
+    display: none;
+    /*opacity: 0.4;*/
+    transform: scale(1.1);
+}
+
+#whatsapp:checked ~ .instagram,
+#whatsapp:checked ~ .facebook,
+#whatsapp:checked ~ .twitter {
+    display: none;
+    /*opacity: 0.4;*/
+    transform: scale(1.1);
+}
+
